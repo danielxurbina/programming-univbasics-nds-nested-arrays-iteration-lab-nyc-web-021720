@@ -21,7 +21,15 @@ def find_greater_pair(src)
   # that are in the inner Arrays
   row_index = 0
   result[]
-  
+  while row_index < src.count do
+    if src[index][0] > src[index][1]
+      result << src[row_index][0]
+    else
+      result << src[row_index][1]
+    end
+    row_index += 1
+  end
+  return result
 end
 
 def total_even_pairs(src)
